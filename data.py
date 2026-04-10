@@ -20,6 +20,7 @@ def filter_sequences(sequences):
     removed_length = 0
     removed_chars = 0
     for seq in sequences:
+        seq = seq.upper()
         if not (10 <= len(seq) <= 50):
             removed_length += 1
             continue
